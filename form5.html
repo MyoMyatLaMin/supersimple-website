@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>survey-form</title>
+<link href="form5.css" rel="stylesheet">
+</head>
+<body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!-- head - Googlefonts link -->
+
+<div id="outside">
+<form id="survey-form" action="/my-handling-form-page" method="post">
+  <!--h1 id="title">Application for permission to date my daughter</h1-->
+   <h1 id="title">class feedback form</h1>
+  <p id="description"><b>Note:</b> Form is to be completed at least 21 days prior to date</p>
+  
+  <!-- ------------------Personal Details---------------------------- -->
+  <fieldset>
+    <!-- groups of widgets that share the same purpose, for styling and semantic purposes -->
+    <legend>Personal Details</legend>
+    <!-- formally describes the purpose of the fieldset it is included inside. -->
+   <table>
+     <tr>
+	 <td> <label id="name-label" for="name">Name:</label></td>
+      <td><input type="text" required id="name" name="user_name" placeholder="Enter name here"></td>
+   </tr>
+   <tr>
+      	 <td><label for="address-label">Address:</label></td>
+      	 <td><input type="Address" id="address" name="Address" placeholder="Enter address here"> </td>
+  </tr>
+   <tr>
+      	 <td><label id="email-label" for="Email">Email:</label></td>
+      	 <td><input type="email" required id="email" name="user_email" placeholder="Enter email here"></td> 
+</tr>
+ <tr>
+      	 <td><label id="number-label" for="phone">Phone Number:</label></td>
+      	 <td><input type="tel" id="number" name="user_name" placeholder="Enter 10 digit number" min="1" max="9"></td>
+ </tr>
+     <tr>
+      	 <td><label id="iq-label" for="iq">Roll No:</label></td>
+      	 <td><input type="number" id="iq" name="iq" placeholder="Enter Roll No here"></td> 
+	  </tr>
+	   <tr>
+	  <!--label for="date-label">Date of Proposed Outing:</label-->
+	 <td><label for="date-label">Date of Birth:</label></td>
+    <td><input type="date" name="bday"></td>
+	 </tr>
+</table>
+    <!-- ------------------Radio Buttons-------------------------------- -->
+    <P>
+      <label for="Gender">Gender</label>
+      <p>
+        <input type="radio" name="gender" value="male" checked> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+        <input type="radio" name="gender" value="other"> Other
+      </p>
+    </P>
+    
+  
+  </fieldset>
+  <!-- ------------------Checkboxes-------------------------------- -->
+  <fieldset>
+    <label for="Gender">Why did you decide to take this course?</label>
+    <p>
+	<input type="checkbox" name="tattoo" value="tattoo"> Recommendation<br>
+      <input type="checkbox" name="age" value="Car"> I like the subject<br>
+      <input type="checkbox" name="car" value="car"> It's my passion<br>
+      <input type="checkbox" name="work" value="work" checked> General education<br>
+      <input type="checkbox" name="rich" value="rich" checked> Major or Minor requirement<br>
+      <input type="checkbox" name="loc" value="loc" checked> Other<br>
+	  
+      <!--input type="checkbox" name="tattoo" value="tattoo"> I have tattoos and/or piercings<br>
+      <input type="checkbox" name="age" value="Car"> I am more than 2 years older than my daughter<br>
+      <input type="checkbox" name="car" value="car"> I own a panel van or V8 ute<br>
+      <input type="checkbox" name="work" value="work" checked> I work full-time<br>
+      <input type="checkbox" name="rich" value="rich" checked> My parents are rich<br>
+      <input type="checkbox" name="loc" value="loc" checked> Is the date at a well lit public location<br-->
+    </p>
+  </fieldset>
+
+  <!-- ------------------Checkboxes-------------------------------- -->
+  <fieldset>
+    <label for="Gender">Based on your expectations, how hard was this course?</label>
+    <p>
+	<input type="checkbox" name="tattoo" value="tattoo"> Much easier than expected<br>
+      <input type="checkbox" name="age" value="Car"> Easier than expected<br>
+      <input type="checkbox" name="car" value="car"> As expected<br>
+      <input type="checkbox" name="work" value="work" checked> Harder than expected<br>
+      <input type="checkbox" name="rich" value="rich" checked> Much harder than expected<br>
+      <input type="checkbox" name="loc" value="loc" checked> Other<br>
+  </p>
+  </fieldset>
+  
+  <!-- ------------------Checkboxes-------------------------------- -->
+  <fieldset>
+    <label for="Gender">Teaching Technique</label>
+    <p>
+	<input type="checkbox" name="tattoo" value="tattoo"> I understand<br>
+      <input type="checkbox" name="age" value="Car"> I am very interested<br>
+      <input type="checkbox" name="car" value="car"> Boring<br>
+      <input type="checkbox" name="work" value="work" checked> happy for studying<br>
+      <input type="checkbox" name="rich" value="rich" checked> I don't want to attend class<br>
+      <input type="checkbox" name="loc" value="loc" checked> normal<br>
+  </p>
+  </fieldset>
+  
+  <!-- ------------------Radio Buttons-------------------------------- -->
+    <fieldset>
+      
+	   <label for="y">1. Can you register for another course by the same teacher?</label>
+     
+	  <p>
+        <input type="radio" name="y" value="male" checked> Yes<br>
+        <input type="radio" name="y" value="female"> No<br>     
+      </p>
+	 
+	   <label for="n">2. Do you find the course useful?</label>	  
+      <p>
+        <input type="radio" name="n" value="male" checked> Yes<br>
+        <input type="radio" name="n" value="female"> No<br>
+       </p>
+	   
+	    <label for="yn">3. Would you recommend this course to others?</label>	  
+      <p>
+        <input type="radio" name="yn" value="male" checked> Yes<br>
+        <input type="radio" name="yn" value="female"> No<br>
+       </p>
+	  
+    </fieldset>
+  <!-- -----------------Dropdown menus--------------------------------- -->
+  
+  <fieldset>
+    <div>
+      <label for="politics">Subject:</label>
+      <select id="dropdown">
+	<option value="office">Office365</option>
+  <option value="left">HTML</option>
+  <option value="right">CSS</option>
+  <option value="conservative">Javascript</option>
+  <option value="nazi">PHP</option>
+  <option value="c">C#</option>
+  <option value="java">Java</option>
+  </select>
+
+      <label for="politics">Class</label>
+      <select id="dropdown2">
+  <option value="University">First Year</option>
+  <option value="College">Second Year</option>
+  <option value="Secondary">Third Year</option>  
+  <option value="None">Fourth Year</option>
+  </select>
+    </div>
+  </fieldset>
+
+  <!-- --------------------Text Areas------------------------------ -->
+  
+  <fieldset>
+    <legend>Essay Section</legend>
+    <div>
+      <label for="msg"></label>
+      <p> What do you think of the teacher?</p>
+      <textarea id="msg" name="user_message" rows="4" cols="50" placeholder="Enter Text Here"></textarea>   </div>
+    <div>
+      <label for="msg">How can we improve this course?</label><br>
+      <textarea id="msg2" name="user_message" rows="4" cols="50" placeholder="Enter Text Here"></textarea>   </div>
+    <p>Upload Police Clearance Certificate, Bank Statement and Medical Certifiates here:
+      <button>Attach Files</button></p>
+  </fieldset>
+
+  <div id="submitbutton">
+    <button type="submit" id="submit">Send your application</button> </div>
+
+</form>
+  </div>
+  
+
+<!-- https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Form_validation -->
+</body>
+</html>
+	
